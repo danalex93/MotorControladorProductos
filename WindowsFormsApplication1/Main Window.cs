@@ -24,6 +24,27 @@ namespace WindowsFormsApplication1
             button10.Hide();
         }
 
+        private void clearButtons(){
+            // limpiar boton7
+            button7.Click -= button7_pClick;
+            button7.Click -= button7_gClick;
+            button7.Click -= button7_xClick;
+            button7.Click -= button7_bClick;
+            button7.Click -= button7_fClick;
+            button7.Click -= button7_iClick;
+            // limpiar boton 8
+            button8.Click -= button8_pClick;
+            button8.Click -= button8_gClick;
+            button8.Click -= button8_xClick;
+            button8.Click -= button8_bClick;
+            button8.Click -= button8_iClick;
+            //limpiar boton 9
+            button9.Click -= button9_pClick;
+            button9.Click -= button9_xClick;
+            button9.Click -= button9_iClick;
+            //limpiar boton 10
+            button10.Click -= button10_iClick;
+        }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -38,23 +59,13 @@ namespace WindowsFormsApplication1
         // Button 1!!
         private void button1_Click(object sender, EventArgs e)
         {
+            clearButtons();
             label1.Show();
             button7.Show();
-            button7.Click -= button7_pClick;
-            button7.Click -= button7_gClick;
-            button7.Click -= button7_xClick;
-            button7.Click -= button7_bClick;
-            button7.Click -= button7_fClick;
             button7.Click += button7_iClick;
             button8.Show();
-            button8.Click -= button8_pClick;
-            button8.Click -= button8_gClick;
-            button8.Click -= button8_xClick;
-            button8.Click -= button8_bClick;
             button8.Click += button8_iClick;
             button9.Show();
-            button9.Click -= button9_pClick;
-            button9.Click -= button9_xClick;
             button9.Click += button9_iClick;
             button10.Show();
             button10.Click += button10_iClick;
@@ -93,23 +104,13 @@ namespace WindowsFormsApplication1
         // Button 2
         private void button2_Click(object sender, EventArgs e)
         {
+            clearButtons();
             label1.Show();
             button7.Show();
-            button7.Click -= button7_iClick;
-            button7.Click -= button7_gClick;
-            button7.Click -= button7_xClick;
-            button7.Click -= button7_bClick;
-            button7.Click -= button7_fClick;
             button7.Click += button7_pClick;
             button8.Show();
-            button8.Click -= button8_iClick;
-            button8.Click -= button8_gClick;
-            button8.Click -= button8_xClick;
-            button8.Click -= button8_bClick;
             button8.Click += button8_pClick;
             button9.Show();
-            button9.Click -= button9_iClick;
-            button9.Click -= button9_xClick;
             button9.Click += button9_pClick;
             button10.Hide();
             label1.Text = "Seleccione una opción correspondiente a platos:";
@@ -140,19 +141,11 @@ namespace WindowsFormsApplication1
         //Button 3!!
         private void button3_Click(object sender, EventArgs e)
         {
+            clearButtons();
             label1.Show();
             button7.Show();
-            button7.Click -= button7_pClick;
-            button7.Click -= button7_gClick;
-            button7.Click -= button7_xClick;
-            button7.Click -= button7_bClick;
-            button7.Click -= button7_fClick;
             button7.Click += button7_gClick;
             button8.Show();
-            button8.Click -= button8_pClick;
-            button8.Click -= button8_gClick;
-            button8.Click -= button8_xClick;
-            button8.Click -= button8_bClick;
             button8.Click += button8_gClick;
             button9.Hide();
             button10.Hide();
@@ -177,23 +170,13 @@ namespace WindowsFormsApplication1
         // Button 4!!
         private void button4_Click(object sender, EventArgs e)
         {
+            clearButtons();
             label1.Show();
             button7.Show();
-            button7.Click -= button7_pClick;
-            button7.Click -= button7_iClick;
-            button7.Click -= button7_gClick;
             button7.Click += button7_xClick;
-            button7.Click -= button7_bClick;
-            button7.Click -= button7_fClick;
             button8.Show();
-            button8.Click -= button8_pClick;
-            button8.Click -= button8_gClick;
-            button8.Click -= button8_xClick;
-            button8.Click -= button8_bClick;
             button8.Click += button8_xClick;
             button9.Show();
-            button9.Click -= button9_pClick;
-            button9.Click -= button9_xClick;
             button9.Click += button9_xClick;
             button10.Hide();
             label1.Text = "Seleccione una opción correspondiente a promociones:";
@@ -221,19 +204,11 @@ namespace WindowsFormsApplication1
         // Button 5!!
         private void button5_Click(object sender, EventArgs e)
         {
+            clearButtons();
             label1.Show();
             button7.Show();
-            button7.Click -= button7_iClick;
-            button7.Click -= button7_gClick;
-            button7.Click -= button7_xClick;
-            button7.Click -= button7_pClick;
-            button7.Click -= button7_fClick;
             button7.Click += button7_bClick;
             button8.Show();
-            button8.Click -= button8_iClick;
-            button8.Click -= button8_gClick;
-            button8.Click -= button8_xClick;
-            button8.Click -= button8_pClick;
             button8.Click += button8_bClick;
             button9.Hide();
             button10.Hide();
@@ -255,12 +230,9 @@ namespace WindowsFormsApplication1
         // Button 5!!
         private void button6_Click(object sender, EventArgs e)
         {
+            clearButtons();
             label1.Show();
             button7.Show();
-            button7.Click -= button7_iClick;
-            button7.Click -= button7_gClick;
-            button7.Click -= button7_xClick;
-            button7.Click -= button7_pClick;
             button7.Click += button7_fClick;
             button8.Hide();
             button9.Hide();

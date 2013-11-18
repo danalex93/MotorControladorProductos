@@ -20,6 +20,21 @@ namespace WindowsFormsApplication1
             this.MaximizeBox = false;
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            leerIngredientes();
+        }
+
+        private void leerIngredientes()
+        {
+            XmlTextReader original = new XmlTextReader("ingredientes.xml"); //lector seria como el puntero al fichero
+            string nombre, id;
+            while (original.ReadToFollowing("ingrediente"))
+            {
+                id = original.GetAttribute(0);
+                original.ReadToFollowing("nombre");
+                nombre = original.ReadString();
+                this.comboBox1.Items.Add(nombre);
+            }
+            original.Close();
         }
 
         private bool borrarIngrediente()
@@ -29,25 +44,26 @@ namespace WindowsFormsApplication1
                 #region Archivo existe
                 if (File.Exists("ingredientes.xml"))
                 {
-                    XmlTextWriter temp = new XmlTextWriter("ingredientes.temp", null); //Crear el fichero
-                    temp.Formatting = Formatting.Indented; // darle formato
-                    temp.WriteStartDocument(); // se abre el documento
-                    temp.WriteStartElement("ingredientes"); // se aabre o inicia alumnos donde estan todos los alumnos
-                    XmlTextReader original = new XmlTextReader("ingredientes.xml"); //lector seria como el puntero al fichero
+                    XmlTextWriter temp = new XmlTextWriter("ingredientes.temp", null);
+                    temp.Formatting = Formatting.Indented;
+                    temp.WriteStartDocument();
+                    temp.WriteStartElement("ingredientes");
+                    XmlTextReader original = new XmlTextReader("ingredientes.xml");
                     string nombre, id, maxima, actual;
                     while (original.ReadToFollowing("ingrediente"))
                     {
                         id = original.GetAttribute(0);
-                        if (id == this.textBox1.Text)
-                        {
-                            continue;
-                        }
                         original.ReadToFollowing("nombre");
                         nombre = original.ReadString();
                         original.ReadToFollowing("cantidad_maxima");
                         maxima = original.ReadString();
                         original.ReadToFollowing("cantidad_actual");
                         actual = original.ReadString();
+
+                        if (String.Compare(nombre,this.comboBox1.Text) == 0)
+                        {
+                            continue;
+                        }
 
                         //escribir temporal
                         temp.WriteStartElement("ingrediente");
