@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DB581CD-B821-4850-AE2F-06D8B6B4A064}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MotorControladorProductos</RootNamespace>
+    <AssemblyName>Motor Controlador de Productos 2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sushi-Food.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Borrar Plato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrar Plato.Designer.cs">
+      <DependentUpon>Borrar Plato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrar Garzon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrar Garzon.Designer.cs">
+      <DependentUpon>Borrar Garzon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar Promo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar Promo.Designer.cs">
+      <DependentUpon>Eliminar Promo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar Boleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar Boleta.Designer.cs">
+      <DependentUpon>Ingresar Boleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ver Boletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver Boletas.Designer.cs">
+      <DependentUpon>Ver Boletas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar Promo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar Promo.Designer.cs">
+      <DependentUpon>Ingresar Promo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ver Promociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver Promociones.Designer.cs">
+      <DependentUpon>Ver Promociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar Garzon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar Garzon.Designer.cs">
+      <DependentUpon>Ingresar Garzon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar Plato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar Plato.Designer.cs">
+      <DependentUpon>Ingresar Plato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ver Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver Menu.Designer.cs">
+      <DependentUpon>Ver Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Window.Designer.cs">
+      <DependentUpon>Main Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario Ingredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario Ingredientes.Designer.cs">
+      <DependentUpon>Inventario Ingredientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar Ingrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresar Ingrediente.Designer.cs">
+      <DependentUpon>Ingresar Ingrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrar Ingrediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrar Ingrediente.Designer.cs">
+      <DependentUpon>Borrar Ingrediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Stock.Designer.cs">
+      <DependentUpon>Modificar Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Borrar Plato.resx">
+      <DependentUpon>Borrar Plato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrar Garzon.resx">
+      <DependentUpon>Borrar Garzon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar Promo.resx">
+      <DependentUpon>Eliminar Promo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Boleta.resx">
+      <DependentUpon>Ingresar Boleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver Boletas.resx">
+      <DependentUpon>Ver Boletas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Promo.resx">
+      <DependentUpon>Ingresar Promo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Garzon.resx">
+      <DependentUpon>Ingresar Garzon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Plato.resx">
+      <DependentUpon>Ingresar Plato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Window.resx">
+      <DependentUpon>Main Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario Ingredientes.resx">
+      <DependentUpon>Inventario Ingredientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresar Ingrediente.resx">
+      <DependentUpon>Ingresar Ingrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrar Ingrediente.resx">
+      <DependentUpon>Borrar Ingrediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Stock.resx">
+      <DependentUpon>Modificar Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ver Menu.resx">
+      <DependentUpon>Ver Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver Promociones.resx">
+      <DependentUpon>Ver Promociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\sushi_256X256.png" />
+    <Content Include="Sushi-Food.ico" />
+    <None Include="Resources\sushi_256X256.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
