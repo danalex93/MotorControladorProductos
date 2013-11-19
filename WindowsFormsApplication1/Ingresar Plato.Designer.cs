@@ -90,10 +90,10 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "plato_entrada",
-            "rolls_fondo",
-            "sashimis",
-            "bajativo"});
+            "Plato de Entrada",
+            "Rolls de Fondo",
+            "Sashimis",
+            "Bajativo"});
             this.comboBox1.Location = new System.Drawing.Point(103, 177);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 21);
@@ -114,7 +114,6 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

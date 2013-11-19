@@ -21,11 +21,9 @@ namespace WindowsFormsApplication1
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         }
-
         private bool borrarIngrediente()
         {
-            try
-            {
+            try { 
                 #region Archivo existe
                 if (File.Exists("ingredientes.xml"))
                 {
@@ -86,7 +84,7 @@ namespace WindowsFormsApplication1
             }
             return true;
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

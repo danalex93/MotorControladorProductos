@@ -129,7 +129,7 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                MessageBox.Show("Error añadiendo garzón a sistema!", "Alerta",
+                MessageBox.Show("Error añadiendo ingrediente a sistema!", "Alerta",
                 MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
