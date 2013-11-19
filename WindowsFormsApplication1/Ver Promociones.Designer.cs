@@ -35,14 +35,10 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "2x1 en Sushi",
-            "3x2 en Sashimis",
-            "Bajativo Gratis por la compra de 3 o más Sashimis"});
             this.listBox1.Location = new System.Drawing.Point(13, 13);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(460, 212);
-            this.listBox1.TabIndex = 0;
+            this.listBox1.TabIndex = 1;
             // 
             // button1
             // 
@@ -62,7 +58,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form11";
-            this.Text = "Promociones Activas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Motor Controlador de Productos - Listado de Promociones";
             this.ResumeLayout(false);
 
         }

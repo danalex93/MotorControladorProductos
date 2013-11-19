@@ -58,7 +58,8 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form2";
-            this.Text = "Motor Controlador de Productos - Inventario de Ingredientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inventario de Ingredientes";
             this.ResumeLayout(false);
 
         }

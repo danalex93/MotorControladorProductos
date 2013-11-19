@@ -81,6 +81,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.AllowSpace = false;
             this.textBox1.Location = new System.Drawing.Point(177, 26);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(62, 20);
@@ -88,6 +89,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.AllowSpace = false;
             this.textBox2.Location = new System.Drawing.Point(89, 75);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
@@ -136,6 +138,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Stock";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -148,10 +151,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private NumericTextBox textBox1;
+        private NumericTextBox textBox2;
     }
 }

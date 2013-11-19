@@ -46,6 +46,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.AllowSpace = false;
             this.textBox1.Location = new System.Drawing.Point(96, 26);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 20);
@@ -92,6 +93,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form13";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Promoción";
             this.ResumeLayout(false);
             this.PerformLayout();

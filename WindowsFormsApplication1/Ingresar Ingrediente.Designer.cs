@@ -98,6 +98,7 @@
             // 
             // idIngrediente
             // 
+            this.idIngrediente.AllowSpace = false;
             this.idIngrediente.Location = new System.Drawing.Point(65, 30);
             this.idIngrediente.Name = "idIngrediente";
             this.idIngrediente.Size = new System.Drawing.Size(156, 20);
@@ -112,6 +113,7 @@
             // 
             // cantIngrediente
             // 
+            this.cantIngrediente.AllowSpace = false;
             this.cantIngrediente.Location = new System.Drawing.Point(65, 126);
             this.cantIngrediente.Name = "cantIngrediente";
             this.cantIngrediente.Size = new System.Drawing.Size(156, 20);
@@ -119,6 +121,7 @@
             // 
             // inIngrediente
             // 
+            this.inIngrediente.AllowSpace = false;
             this.inIngrediente.Location = new System.Drawing.Point(65, 175);
             this.inIngrediente.Name = "inIngrediente";
             this.inIngrediente.Size = new System.Drawing.Size(156, 20);
@@ -140,6 +143,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresar Ingrediente";
             this.ResumeLayout(false);
             this.PerformLayout();
