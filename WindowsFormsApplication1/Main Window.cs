@@ -223,7 +223,8 @@ namespace WindowsFormsApplication1
         }
         private void button8_bClick(object sender, EventArgs e)
         {
-            this.Close();
+            Form15 frm = new Form15();
+            frm.Show();
         }
         // ...
 
@@ -254,6 +255,11 @@ namespace WindowsFormsApplication1
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

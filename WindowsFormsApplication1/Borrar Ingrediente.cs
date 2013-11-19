@@ -36,11 +36,9 @@ namespace WindowsFormsApplication1
             }
             original.Close();
         }
-
         private bool borrarIngrediente()
         {
-            try
-            {
+            try { 
                 #region Archivo existe
                 if (File.Exists("ingredientes.xml"))
                 {
@@ -102,7 +100,7 @@ namespace WindowsFormsApplication1
             }
             return true;
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

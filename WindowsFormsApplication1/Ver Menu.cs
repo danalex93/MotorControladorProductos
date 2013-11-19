@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace WindowsFormsApplication1
 {
@@ -19,6 +18,7 @@ namespace WindowsFormsApplication1
             this.MaximizeBox = false;
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+<<<<<<< HEAD
             leerPlatos();
         }
 
@@ -34,6 +34,8 @@ namespace WindowsFormsApplication1
                 this.listBox1.Items.Add(nombre);
             }
             original.Close();
+=======
+>>>>>>> victor
         }
 
         private void button1_Click(object sender, EventArgs e)
